@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box5, .box4, .box3, .box2, .box1 {
+  width: 100px;
+  height: 100px;
+  background-color: navy;
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+section {
+  width: 960px;
+  padding: 20px;
+  background-color: navy;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-family: "Noto Sans";
+  font-size: 2rem;
+  color: aqua;
+}
+
+section p {
+  font-family: "Noto Sans";
+  font-size: 1.1rem;
+  color: aqua;
+}
+
+.pink {
+  color: pink;
+  /*@extend %box;*/
+}
+
+nav {
+  width: 960px;
+  background-color: #000;
+  height: 40px;
+  margin: 0 auto;
+}
+@media (max-width: 992px) {
+  nav {
+    background-color: red;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    width: 100vw;
+    background-color: rgb(11, 239, 255);
+  }
+}
+@media (max-width: 576px) {
+  nav {
+    width: 100vw;
+    background-color: rgb(255, 0, 183);
+  }
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul a {
+  display: block;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+  color: aquamarine;
+  line-height: 2;
+  /*& - parent selector*/
+}
+nav ul a:hover {
+  color: #000;
+  background-color: aqua;
+}
+
+.btn, .cta {
+  background-color: crimson;
+  color: #fff;
+  font-family: "Noto Sans";
+  font-size: 2rem;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.cta {
+  text-align: center;
+}
+
+.boxm1 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 20px;
+}
+
+.boxm2 {
+  width: 300px;
+  height: 50px;
+  background-color: magenta;
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 20px;
+}
+
+.boxm3 {
+  width: 50px;
+  height: 300px;
+  background-color: yellow;
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 20px;
+}
+
+.boxm4 {
+  width: 200px;
+  height: 250px;
+  background-color: orange;
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 20px;
+}
+
+.boxm5 {
+  width: 80px;
+  height: 150px;
+  background-color: orange;
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 20px;
+}
+
+header {
+  background-color: magenta;
+  width: 100vw;
+  height: 60px;
+  margin: 0 auto;
+}
+@media (max-width: 992px) {
+  header {
+    background-color: red;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    background-color: green;
+  }
+}
+@media (max-width: 576px) {
+  header {
+    background-color: blue;
+  }
+}/*# sourceMappingURL=main.css.map */

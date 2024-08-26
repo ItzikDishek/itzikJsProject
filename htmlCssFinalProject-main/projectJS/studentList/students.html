@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <title>Document</title>
+  <script type="module" defer src="js/appStudents.js"></script>
+</head>
+
+<body>
+  <header class="p-3 mb-2 bg-secondary text-white">
+    <nav class="container">
+      <a href="students.html" class="me-2" style="font-family: Libre Baskerville
+;">Student Grades</a>
+      <a href="studentForm.html" class="me-2" style="font-family: Libre Baskerville
+;">Add new student</a>
+    </nav>
+  </header>
+  <main class="container">
+    <h1 class="display-4" style="font-family: Libre Baskerville;">List of student grades by subjects</h1>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>name</th>
+          <th>score</th>
+          <th>subject</th>
+          <th>delete</th>
+        </tr>
+      </thead>
+      <tbody id="id_tbody">
+      </tbody>
+    </table>
+  </main>
+</body>
+
+</html>

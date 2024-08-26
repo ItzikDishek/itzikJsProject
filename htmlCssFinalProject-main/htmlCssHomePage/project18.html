@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: white;
+        }
+
+        nav {
+            width: 40vw;
+            height: 2vh;
+            background-color: white;
+            margin: 0 auto;
+            position: absolute;
+            right: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul a {
+            display: block;
+            text-decoration: none;
+            width: 7vw;
+            text-align: center;
+            color: black;
+            line-height: 2;
+        }
+
+        nav ul a:hover {
+            background-color: aqua;
+            color: darkblue;
+        }
+
+        section ul li {
+            position: absolute;
+            top: 2vh;
+            left: 1vw;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        section {
+            width: 40vw;
+            height: 2vh;
+            font-size: 10px;
+            margin: 0 auto;
+            list-style-type: none;
+        }
+
+        section ul li img {
+            width: 50px;
+            height: 50px;
+        }
+
+        section ul li p {
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        .item {
+            background-color: white;
+            margin: 80px;
+            display: flex;
+            justify-content: space-around;
+            z-index: 2;
+            position: absolute;
+            top: 60vh;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, .0);
+        }
+
+        .icon {
+            padding: 30px;
+        }
+
+        .icon img {
+            width: 5vw;
+            height: 10vh;
+        }
+
+        .welcome {
+            width: 100vw;
+            height: 13vh;
+        }
+
+        .welcome img {
+            position: absolute;
+            top: 21vh;
+            right: 0;
+            left: 0;
+            width: 100vw;
+            height: 49vh;
+            z-index: 1;
+        }
+
+        .welcomeDit h1 {
+            background-color: rgba(255, 255, 255, .0);
+            color: #fff;
+            font-size: 56px;
+            text-align: center;
+            position: absolute;
+            top: 33vh;
+            left: 33vw;
+            z-index: 2;
+        }
+
+        .welcomeDit p {
+            position: absolute;
+            background-color: rgba(255, 255, 255, .0);
+            color: #fff;
+            font-size: 36px;
+            text-align: center;
+            left: 17vw;
+            top: 45vh;
+            z-index: 2;
+        }
+
+        .click .c1 {
+            position: absolute;
+            top: 58vh;
+            right: 38vw;
+            display: block;
+            height: 5.5vh;
+            width: 10vw;
+            padding-top: 7px;
+            background-color: white;
+            color: #000000;
+            text-decoration: none;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 15px;
+            z-index: 2;
+        }
+
+        .click .c2 {
+            position: absolute;
+            top: 58vh;
+            left: 38vw;
+            display: block;
+            height: 5.5vh;
+            width: 10vw;
+            padding-top: 7px;
+            background-color: white;
+            color: #000000;
+            text-decoration: none;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 15px;
+            z-index: 2;
+        }
+
+
+
+        .body {
+            background-color: rgb(128, 128, 128, .1);
+            width: 100vw;
+            height: 133vh;
+            top: 90vh;
+            z-index: 2;
+            position: absolute;
+        }
+
+        .body img {
+            width: 62vw;
+            height: 87vh;
+            z-index: 5;
+            position: absolute;
+            top: 20vh;
+            left: 20vw;
+        }
+
+        footer {
+            position: absolute;
+            top: 220vh;
+            left: 2vw;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <li>
+                <img src="pic/profile-image.png" alt="profile-image">
+                <p>Itzik Dishek</p>
+            </li>
+        </ul>
+    </section>
+    <nav>
+        <ul>
+            <li><a href="../profolioPage/index.html">Home</a></li>
+            <li><a href="../profolioPage/index.html#about">About Me</a></li>
+            <li><a href="../profolioPage/index.html#container">projects</a></li>
+            <li><a href="../profolioPage/index.html#doc">Contect</a></li>
+        </ul>
+    </nav>
+    <br>
+
+    <div class="welcome">
+        <img src="pic/background.jpg" alt="">
+    </div>
+    <div class="welcomeDit">
+        <h1>welcome To My Site!</h1>
+        <p>Welcome to my profolio site which showcases my Full Stack knowledge</p>
+    </div>
+    <br>
+
+    <div class="item">
+        <div class="icon"><img src="pic/img-CSS.png" alt="logo css"></div>
+        <div class="icon"><img src="pic/img-HTML.png" alt="logo html"></div>
+        <div class="icon"><img src="pic/logo word press.png" alt="logo word press"></div>
+        <div class="icon"><img src="pic/img-Bootstrap.png" alt="logo bootstrap"></div>
+        <div class="icon"><img src="pic/img-SASS@2x.png" alt="logo sass"></div>
+    </div>
+    <div class="click">
+        <a href="../htmlCssProjects/project8.html" class="c1">Project view &#x27A4;</a>
+        <a href="../htmlCssProjects/project8.zip" class="c2">Project download &#x27A4;</a>
+    </div>
+
+    <br><br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="body">
+        <img src="pic/page8.png" alt="">
+    </div>
+    <br>
+    <footer>
+        <p>Itzik Dishek - All Rights Reserved &#169;</p>
+    </footer>
+</body>
+
+</html>

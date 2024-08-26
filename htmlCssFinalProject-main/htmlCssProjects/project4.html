@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        div h1 {
+            font-size: 160px;
+            position: absolute;
+            top: 20vh;
+            left: 27vw;
+            width: 50vw;
+            height: 20vh;
+            text-align: left;
+            font: normal normal normal 160px/231px Satisfy;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            text-shadow: 0px 0px 36px #00000087;
+            opacity: 1;
+        }
+
+        div h6 {
+            position: absolute;
+            font-size: 32px;
+            top: 50vh;
+            left: 23vw;
+            width: 48vw;
+            height: 6vh;
+            text-align: right;
+            font: normal normal normal 32px/38px Varela Round;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+
+        div p {
+            position: absolute;
+            top: 60vh;
+            left: 21vw;
+            width: 60vw;
+            height: 7vh;
+            text-align: center;
+            font: normal normal normal 16px/20px Varela Round;
+            letter-spacing: 0px;
+            color: #F9F9F9;
+            opacity: 1;
+        }
+
+        .inputName {
+            color: #F9F9F9;
+            position: absolute;
+            top: 74.5vh;
+            left: 60.5vw;
+            width: 28vw;
+            height: 6.5vh;
+            background: #F6F6F624 0% 0% no-repeat padding-box;
+            border: 2px solid #FFFFFF;
+            opacity: 1;
+        }
+
+        .inputEmail {
+            color: #F9F9F9;
+            position: absolute;
+            top: 74.5vh;
+            left: 31vw;
+            width: 28vw;
+            height: 6.5vh;
+            background: #F6F6F624 0% 0% no-repeat padding-box;
+            border: 2px solid #FFFFFF;
+            opacity: 1;
+        }
+
+        .btn {
+            position: absolute;
+            color: #1C1C1C;
+            padding: 15px 65px;
+            text-decoration: none;
+            font-size: 16px;
+            top: 74.5vh;
+            left: 16vw;
+            width: 13.5vw;
+            height: 6.5vh;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .name {
+            color: #F9F9F9;
+            position: absolute;
+            top: 72vh;
+            left: 60.5vw;
+            width: 4vw;
+            height: 3vh;
+        }
+
+        .email {
+            color: #F9F9F9;
+            position: absolute;
+            top: 72vh;
+            left: 30.8vw;
+            width: 4vw;
+            height: 3vh;
+        }
+
+        @media (max-width: 768px) {
+            div {
+                overflow: hidden;
+            }
+
+            div h1 {
+                position: absolute;
+                font-size: 60px;
+                top: 0vh;
+                left: 21vw;
+                width: 66vw;
+                height: 15vh;
+            }
+
+            div h6 {
+                position: absolute;
+                text-align: center;
+                top: 27vh;
+                left: 10vw;
+                width: 75vw;
+                height: 7vh;
+                font-size: 18px;
+            }
+
+            div p {
+                position: absolute;
+                top: 36vh;
+                left: 13vw;
+                width: 70vw;
+                height: 20vh;
+                text-align: center;
+                font-size: 16px;
+            }
+
+            .inputName {
+                position: absolute;
+                top: 58vh;
+                left: 18.5vw;
+                width: 61vw;
+                height: 7vh;
+            }
+
+            .inputEmail {
+                position: absolute;
+                top: 70vh;
+                left: 18.5vw;
+                width: 61vw;
+                height: 7vh;
+            }
+
+            .email {
+                top: 66vh;
+                left: 18.5vw;
+                width: 5vw;
+                height: 3vh;
+            }
+
+            .name {
+                top: 54.2vh;
+                left: 18.5vw;
+                width: 5vw;
+                height: 3vh;
+            }
+
+            .btn {
+                position: absolute;
+                top: 80vh;
+                left: 18.5vw;
+                width: 62vw;
+                height: 6vh;
+                color: #2823FD;
+                padding: 5px 40px 5px 110px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Here & Now</h1>
+        <h6>We wanted to invite you to enjoy a variety of gifts</h6>
+        <p>Lorem Ipsum Dolor Sit Emmett, Konsektorer Edificing Elit Perromy Bluff Kintz Taht Lachar. Lat Tsashami Tsash
+            Balya,
+            Mansuto Tsmelh to Biko Nanbi, Tsamuko Balokria.</p>
+        <form action="https://www.mgweb.co.il">
+            <div class="form_wrapper">
+                <aside class="name">Name:</aside>
+                <input class="inputName" type="text" name="firstname" />
+                <aside class="email">Email:</aside>
+                <input class="inputEmail" type="text" name="lastname" />
+                <a href="#" class="btn">Update me</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+@import url('https: //fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100vw;
+  height: 70vh;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 86px;
+  color: #D3E10E;
+  font-family: "assistant";
+  z-index: 3;
+  position: absolute;
+  top: 25vh;
+  left: 20vw;
+  width: 58vw;
+  height: 15vh;
+  text-align: right;
+  letter-spacing: 0px;
+}
+
+p {
+  position: absolute;
+  top: 45vh;
+  right: 32vw;
+  z-index: 2;
+  color: #F9F9F9;
+}
+
+.name {
+  position: absolute;
+  top: 85.8vh;
+  left: 80.3vw;
+  width: 5vw;
+  height: 3vh;
+  text-align: right;
+  color: #011560;
+  z-index: 2;
+  font: normal normal bold 16px/21px Assistant;
+}
+
+.inputName {
+  position: absolute;
+  top: 88.8vh;
+  left: 892px;
+  width: 27.4vw;
+  height: 7vh;
+  background: #F6F6F6 0% 0% no-repeat padding-box;
+  z-index: 2;
+}
+
+.mail {
+  position: absolute;
+  top: 85.8vh;
+  left: 50.6vw;
+  width: 5vw;
+  height: 3vh;
+  text-align: right;
+  font: normal normal bold 16px/21px Assistant;
+  color: #011560;
+  z-index: 2;
+}
+
+.inputMail {
+  position: absolute;
+  top: 88.8vh;
+  left: 437px;
+  width: 27.4vw;
+  height: 7vh;
+  background: #F6F6F6 0% 0% no-repeat padding-box;
+  z-index: 2;
+}
+
+.btn {
+  position: absolute;
+  z-index: 2;
+  top: 88.8vh;
+  left: 210px;
+  width: 12.5vw;
+  height: 7vh;
+  background: #D3E10E 0% 0% no-repeat padding-box;
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 100vw;
+    height: 60vh;
+  }
+
+  h1 {
+    position: absolute;
+    font-size: 42px;
+    left: 9vw;
+    top: 10vh;
+    width: 80vw;
+  }
+
+  p {
+    position: absolute;
+    font-size: 14px;
+    left: 10vw;
+    top: 25vh;
+    width: 79vw;
+    text-align: center;
+  }
+
+  .name {
+    position: absolute;
+    top: 63vh;
+    left: 64vw;
+    width: 15vw;
+  }
+
+  .mail {
+    position: absolute;
+    top: 77vh;
+    left: 64vw;
+    width: 15vw;
+  }
+
+  .inputName {
+    position: absolute;
+    top: 67vh;
+    left: 21vw;
+    width: 58vw;
+    height: 7vh;
+  }
+
+  .inputMail {
+    position: absolute;
+    top: 81vh;
+    left: 21vw;
+    width: 58vw;
+    height: 7vh;
+  }
+
+  .btn {
+    position: absolute;
+    top: 90vh;
+    left: 21vw;
+    width: 58vw;
+    height: 7vh;
+    padding: 5px 25px 5px 115px;
+  }
+}

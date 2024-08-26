@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Project Css Html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: white;
+        }
+
+        nav {
+            width: 50vw;
+            height: 5vh;
+            background-color: white;
+            margin: 0 auto;
+            position: absolute;
+            right: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul a {
+            display: block;
+            text-decoration: none;
+            width: 10vw;
+            text-align: center;
+            color: black;
+            line-height: 2;
+        }
+
+        nav ul a:hover {
+            background-color: aqua;
+            color: darkblue;
+        }
+
+        section ul li {
+            position: absolute;
+            left: 80px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        section {
+            width: 40vw;
+            height: 1vw;
+            font-size: 10px;
+            margin: 0 auto;
+            list-style-type: none;
+        }
+
+        section ul li img {
+            width: 50px;
+            height: 50px;
+        }
+
+        section ul li p {
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        .item {
+            background-color: white;
+            margin: 80px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .item1 {
+            background-color: white;
+            margin: 80px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .icon {
+            padding: 30px;
+            width: 40px;
+        }
+
+        .icon img {
+            width: 55px;
+            height: 55px;
+        }
+
+        .welcome {
+            width: 90vw;
+            height: 0vh;
+        }
+
+        .welcome img {
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 40vh;
+            width: 98vw;
+            height: 35vh;
+            z-index: 1;
+        }
+
+        .welcomeDit h1 {
+            background-color: rgba(255, 255, 255, .0);
+            color: #fff;
+            font-size: 56px;
+            left: 36vw;
+            position: absolute;
+            width: 35vw;
+            top: 47vh;
+
+            z-index: 2;
+            font-family: dancing script;
+        }
+
+        .welcomeDit p {
+            position: absolute;
+            background-color: rgba(255, 255, 255, .0);
+            color: #fff;
+            font-size: 36px;
+            text-align: center;
+            left: 5vw;
+            top: 58vh;
+            z-index: 2;
+            font-family: dancing script;
+        }
+
+
+        #about h1 {
+            font-size: 55px;
+            text-align: center;
+            display: block;
+            font-family: dancing script;
+        }
+
+        #about p {
+            font-size: 16px;
+            text-align: center;
+            width: 35vw;
+            top: 65vh;
+
+            z-index: 1;
+        }
+
+        #container,
+        #case,
+        #jsProjects {
+            width: 80vw;
+            background-color: white;
+            padding: 20px;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        #container h1 {
+            position: absolute;
+            font-size: 55px;
+            left: 42vw;
+            width: 20vw;
+            height: 10vh;
+            font-family: dancing script;
+        }
+
+        .box {
+            width: 20vw;
+            padding: 20px;
+            background-color: white;
+        }
+
+        img {
+            display: block;
+            margin: 15px auto;
+            width: 16vw;
+            height: 20vh;
+        }
+
+        p {
+            width: 90%;
+            margin: 0 auto;
+            text-align: justify;
+            font-family: serif;
+            line-height: 1.5;
+        }
+
+        .box a {
+            display: block;
+            height: 40px;
+            width: 130px;
+            padding-top: 7px;
+            background-color: black;
+            color: #fff;
+            text-decoration: none;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .box a:hover {
+            background-color: aqua;
+            color: darkblue;
+        }
+
+        .fa-facebook {
+            background: rgba(59, 89, 152, .7);
+            color: white;
+            position: fixed;
+            padding: 20px;
+            font-size: 30px;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            text-decoration: none;
+            right: 90px;
+            bottom: 20px;
+            border-radius: 100px;
+            z-index: 6;
+        }
+
+        .fa-facebook:hover {
+            background-color: #3B5998;
+        }
+
+        .fa-instagram {
+            background: rgba(220, 38, 150, .7);
+            color: white;
+            position: fixed;
+            padding: 10px;
+            font-size: 40px;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            text-decoration: none;
+            right: 160px;
+            bottom: 20px;
+            border-radius: 100px;
+            z-index: 6;
+        }
+
+        .fa-instagram:hover {
+            background-color: #dc2696;
+        }
+
+        .fa-linkedin {
+            background: rgba(107, 144, 224, .7);
+            color: white;
+            position: fixed;
+            padding: 10px;
+            font-size: 40px;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            text-decoration: none;
+            right: 230px;
+            bottom: 20px;
+            border-radius: 100px;
+            z-index: 6;
+        }
+
+        .fa-linkedin:hover {
+            background-color: #6b90e0;
+        }
+
+        .fa-whatsapp {
+            background: rgba(37, 211, 102, .7);
+            color: white;
+            position: fixed;
+            padding: 10px;
+            font-size: 40px;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            text-decoration: none;
+            right: 20px;
+            bottom: 20px;
+            border-radius: 100px;
+            z-index: 6;
+        }
+
+        .fa-whatsapp:hover {
+            background-color: #25d366;
+        }
+
+        a i {
+            position: fixed;
+            bottom: 20px;
+            right: 300px;
+            padding: 10px;
+            font-size: 60px;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 100px;
+            background-color: gray;
+            z-index: 6;
+        }
+
+        a i .material-icons:hover {
+            background-color: rgb(92, 92, 92);
+        }
+
+        .material-icons {
+            padding: 5px 0px 0px 0px;
+        }
+
+        footer p {
+            display: block;
+            bottom: 1vh;
+            left: 1vw;
+        }
+
+        #doc {
+            background-color: lightgray;
+            width: 98.9vw;
+            height: 90vh;
+        }
+
+        #doc .contactL {
+            position: absolute;
+            width: 49vw;
+            background-color: lightgray;
+        }
+
+        #doc .contactL h2 {
+            position: absolute;
+            text-align: left;
+            color: black;
+            font-size: 36px;
+            z-index: 4;
+            top: 3vh;
+            left: 6vw;
+            width: 30vw;
+            height: 10vh;
+            background-color: lightgrey;
+        }
+
+        #doc .contactL p {
+            position: absolute;
+            text-align: left;
+            color: black;
+            font-size: 18px;
+            z-index: 43;
+            background-color: lightgray;
+            top: 10vh;
+            left: 6vw;
+            width: 20vw;
+            height: 10vh;
+        }
+
+        .form {
+            position: absolute;
+            left: 3vw;
+            width: 50vw;
+            height: 80vh;
+            background-color: lightgray;
+            z-index: 2;
+        }
+
+        #doc .contactL .form .name {
+            background-color: lightgray;
+            position: absolute;
+            top: 29vh;
+            left: 3vw;
+        }
+
+        #doc .contactL .form .email {
+            background-color: lightgray;
+            position: absolute;
+            top: 40vh;
+            left: 3vw;
+        }
+
+        #doc .contactL .form .phone {
+            background-color: lightgray;
+            position: absolute;
+            top: 51vh;
+            left: 3vw;
+            width: 60vw;
+        }
+
+        #doc .contactL .form .content {
+            background-color: lightgray;
+            position: absolute;
+            top: 62vh;
+            left: 3vw;
+            width: 30vw;
+            height: 20vh;
+        }
+
+        #doc .contactL .form .inputName {
+            position: absolute;
+            top: 33vh;
+            width: 30vw;
+            height: 7vh;
+            left: 3vw;
+        }
+
+        #doc .contactL .form .inputEmail {
+            position: absolute;
+            width: 30vw;
+            height: 7vh;
+            top: 44vh;
+            left: 3vw;
+        }
+
+        #doc .contactL .form .inputPhone {
+            position: absolute;
+            width: 30vw;
+            height: 7vh;
+            top: 55vh;
+            left: 3vw;
+        }
+
+        #doc .contactL .form .inputContent {
+            position: absolute;
+            width: 30vw;
+            height: 17vh;
+            top: 66vh;
+            left: 3vw;
+        }
+
+        #doc .contactL .btnSend {
+            width: 10vw;
+            height: 5vh;
+            left: 15.2vw;
+            top: 84vh;
+            left: 23vw;
+            background-color: rgb(72, 72, 72);
+            color: white;
+            position: absolute;
+        }
+
+        #doc .contactR {
+            position: absolute;
+            width: 49vw;
+            background-color: lightgray;
+            right: 0;
+        }
+
+        #doc .contactR img {
+            width: 40vw;
+            height: 40vh;
+            position: relative;
+            top: -2vh;
+            z-index: 5;
+            background-color: lightgray;
+        }
+
+        .playCenter h1 {
+            text-align: center;
+            font-size: 46px;
+            position: relative;
+            top: 5vh;
+            font-family: dancing script;
+        }
+
+        .playCenter h2 {
+            text-align: center;
+            font-size: 36px;
+            position: relative;
+            top: 8vh;
+            font-family: dancing script;
+        }
+
+        #jsProjects {
+            justify-content: space-between;
+        }
+
+        .hamburger {
+            color: white;
+        }
+
+        .close {
+            position: absolute;
+            right: 200px;
+            top: 10px;
+            z-index: -1;
+        }
+
+        .logoIcon {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box .simbol img {
+            width: 5vw;
+            height: 10vh;
+        }
+
+        .hr {
+            width: 80vw;
+            text-align: justify;
+            margin-left: 10vw;
+            margin-right: 10vw;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                position: fixed;
+                z-index: 99;
+                background: white;
+                color: #6b90e0;
+                border: none;
+                cursor: pointer;
+                top: 1rem;
+                right: 1rem;
+            }
+
+            .menu {
+                position: fixed;
+                z-index: 100;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100vw;
+                height: 100vh;
+                list-style: none;
+                background: white;
+                display: flex;
+                flex-direction: column;
+                transform: translateY(-100%);
+                transition: transform 0.2s ease;
+            }
+
+            .close {
+                position: absolute;
+                border: none;
+                color: rgb(65, 159, 254);
+                cursor: pointer;
+                top: 1rem;
+                right: 1rem;
+            }
+
+            .menu:target {
+                transform: translateY(0);
+            }
+
+            .welcome img {
+
+                width: 97vw;
+                height: 47vh;
+            }
+
+            .welcomeDit h1 {
+                font-size: 36px;
+                position: absolute;
+                top: 55vh;
+                left: 22vw;
+                width: 78vw;
+                color: white;
+            }
+
+            .welcomeDit p {
+                font-size: 22px;
+                position: absolute;
+                top: 70vh;
+                left: 5vw;
+                color: white;
+            }
+
+            #container {
+                display: block;
+                flex-direction: row;
+                top: 1vh;
+                right: 20vw;
+                width: 70vw;
+            }
+
+            #case {
+                display: block;
+                flex-direction: row;
+                top: 1vh;
+                right: 20vw;
+                width: 70vw;
+            }
+
+            #jsProjects {
+                display: block;
+                flex-direction: row;
+                top: 1vh;
+                right: 20vw;
+                width: 70vw;
+            }
+
+            #jsProjects .box {
+                width: 70vw;
+            }
+
+            #case .box {
+                width: 70vw;
+            }
+
+            #container .box {
+                right: 15vw;
+                width: 70vw;
+            }
+
+            .box p {
+                width: 50vw;
+            }
+
+            .box .logoIcon img {
+                position: relative;
+                display: flex;
+                justify-content: space-around;
+                width: 10vw;
+                height: 10vh;
+            }
+
+            .box img {
+                height: 30vh;
+                width: 50vw;
+            }
+
+            #doc footer .pFooter {
+                color: black;
+                z-index: 9;
+                left: 3vw;
+                background-color: white;
+                bottom: 2vh;
+                width: 40vw;
+                font-size: 16px;
+            }
+
+            #doc {
+                background-color: lightgray;
+                width: 96.5vw;
+                height: 100vh;
+
+            }
+
+            #doc .contactL {
+                position: absolute;
+                width: 50vw;
+                background-color: lightgray;
+            }
+
+            #doc .contactL h2 {
+                position: absolute;
+                text-align: left;
+                color: black;
+                font-size: 36px;
+                z-index: 4;
+                top: 3vh;
+                left: 6vw;
+                width: 30vw;
+                height: 10vh;
+                background-color: lightgrey;
+            }
+
+            #doc .contactL p {
+                position: absolute;
+                text-align: left;
+                color: black;
+                font-size: 18px;
+                z-index: 43;
+                background-color: lightgray;
+                top: 12vh;
+                left: 6vw;
+                width: 55vw;
+                height: 10vh;
+            }
+
+            .form {
+                position: absolute;
+                top: 13vh;
+                left: 3vw;
+                width: 50vw;
+                height: 80vh;
+                background-color: lightgray;
+                z-index: 2;
+            }
+
+            #doc .contactL .form .name {
+                background-color: lightgray;
+                position: absolute;
+                top: 29vh;
+                left: 3vw;
+            }
+
+            #doc .contactL .form .email {
+                background-color: lightgray;
+                position: absolute;
+                top: 40vh;
+                left: 3vw;
+            }
+
+            #doc .contactL .form .phone {
+                background-color: lightgray;
+                position: absolute;
+                top: 51vh;
+                left: 3vw;
+                width: 60vw;
+            }
+
+            #doc .contactL .form .content {
+                background-color: lightgray;
+                position: absolute;
+                top: 62vh;
+                left: 3vw;
+                width: 50vw;
+                height: 20vh;
+            }
+
+            #doc .contactL .form .inputName {
+                position: absolute;
+                top: 33vh;
+                width: 45vw;
+                height: 7vh;
+                left: 3vw;
+            }
+
+            #doc .contactL .form .inputEmail {
+                position: absolute;
+                width: 45vw;
+                height: 7vh;
+                top: 44vh;
+                left: 3vw;
+            }
+
+            #doc .contactL .form .inputPhone {
+                position: absolute;
+                width: 45vw;
+                height: 7vh;
+                top: 55vh;
+                left: 3vw;
+            }
+
+            #doc .contactL .form .inputContent {
+                position: absolute;
+                width: 45vw;
+                height: 11vh;
+                top: 66vh;
+                left: 3vw;
+            }
+
+            #doc .contactL .btnSend {
+                width: 15vw;
+                height: 6vh;
+                left: 15.2vw;
+                top: 78vh;
+                left: 33vw;
+                background-color: rgb(72, 72, 72);
+                color: white;
+                position: absolute;
+            }
+
+            #doc .contactR {
+                position: absolute;
+                width: 50vw;
+                background-color: lightgray;
+                right: 0;
+            }
+
+            #doc .contactR img {
+                width: 35vw;
+                height: 35vh;
+                position: absolute;
+                top: 0.001vh;
+                right: 3vw;
+                z-index: 5;
+                background-color: lightgray;
+            }
+
+            #container h1 {
+                width: 70vw;
+                left: 30vw;
+            }
+
+            #about h1 {
+                font-size: 36px;
+                display: block;
+                left: 15vw;
+                color: black;
+            }
+
+            #about p {
+                font-size: 16x;
+                display: block;
+                left: 15vw;
+                width: 80vw;
+                color: black;
+            }
+
+            .item1 {
+                width: 80vw;
+                height: 30vh;
+                overflow-x: hidden;
+                overflow: hidden;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <li>
+                <img src="pic/profile-image.png" alt="profile-image">
+                <p>Itzik Dishek</p>
+            </li>
+        </ul>
+    </section>
+
+    <nav>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#container">projects</a></li>
+            <li><a href="#doc">Contect</a></li>
+            <a class="close" href="#">
+                <span class="material-icons">
+                    close
+                </span>
+            </a>
+        </ul>
+        <a class="hamburger" href="#menu">
+            <span class="material-icons">
+                menu
+            </span>
+        </a>
+    </nav>
+    <br>
+
+    <div class="item">
+        <div class="icon"><img src="pic/img-CSS.png" alt="logo css"></div>
+        <div class="icon"><img src="pic/img-HTML.png" alt="logo html"></div>
+        <div class="icon"><img src="pic/logo word press.png" alt="logo word press"></div>
+        <div class="icon"><img src="pic/img-Bootstrap.png" alt="logo bootstrap"></div>
+        <div class="icon"><img src="pic/img-SASS@2x.png" alt="logo sass"></div>
+    </div>
+
+    <div class="welcome">
+        <img src="pic/background.jpg" alt="">
+    </div>
+
+    <div class="welcomeDit">
+        <h1>welcome To My Site!</h1>
+        <p>Welcome to my profolio site which showcases my Full Stack knowledge</p>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div id="about">
+        <h1>About Me</h1>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore minima quos, magnam corporis
+            exercitationem quo natus, adipisci possimus saepe voluptatibus, veniam laborum? Veniam at repudiandae
+            fugit
+            id aliquid magnam nobis ab, exercitationem nisi voluptates, delectus dicta obcaecati maxime similique,
+            corporis incidunt earum cum eum mollitia aliquam suscipit totam deleniti nostrum?</p>
+    </div>
+
+    <br><br>
+    <hr class="hr">
+    <div id="container">
+        <h1>html & css</h1>
+
+        <br><br>
+        <div class="box">
+            <br><br>
+            <div class="logoIcon">
+                <div class="simbol"><img src="pic/img-CSS.png" alt="logo css"></div>
+                <div class="simbol"><img src="pic/img-HTML.png" alt="logo html"></div>
+            </div>
+            <img src="pic/page1.png" alt="place hold">
+            <h2></h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quaerat voluptas? Tempora saepe ea
+                consequatur praesentium aspernatur, accusantium, quaerat explicabo repellendus aliquid obcaecati
+                libero,
+                voluptatem quae non? At atque porro maiores quo fugit nesciunt sapiente, iusto recusandae. Aut eaque
+                sunt velit amet, dolores perspiciatis commodi nobis repudiandae inventore corporis nisi!
+            </p>
+            <br><br>
+            <a href="../htmlCssHomePage/project11.html">Project Page &#x27A4;</a>
+        </div>
+        <div class="box">
+            <br><br>
+            <div class="logoIcon">
+                <div class="simbol"><img src="pic/img-CSS.png" alt="logo css"></div>
+                <div class="simbol"><img src="pic/img-HTML.png" alt="logo html"></div>
+            </div>
+            <img src="pic/page2.png" alt="place hold">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quaerat voluptas? Tempora saepe ea
+                consequatur praesentium aspernatur, accusantium, quaerat explicabo repellendus aliquid obcaecati
+                libero,
+                voluptatem quae non? At atque porro maiores quo fugit nesciunt sapiente, iusto recusandae. Aut eaque
+                sunt velit amet, dolores perspiciatis commodi nobis repudiandae inventore corporis nisi!
+            </p>
+            <br><br>
+            <a href="../htmlCssHomePage/project12.html">Project Page &#x27A4;</a>
+        </div>
+        <div class="box">
+            <br><br>
+            <div class="logoIcon">
+                <div class="simbol"><img src="pic/img-CSS.png" alt="logo css"></div>
+                <div class="simbol"><img src="pic/img-HTML.png" alt="logo html"></div>
+                <div class="simbol"><img src="pic/img-SASS@2x.png" alt="logo html"></div>
+            </div>
+            <img src="pic/sassP.png" alt="place hold">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quaerat voluptas? Tempora saepe ea
+                consequatur praesentium aspernatur, accusantium, quaerat explicabo repellendus aliquid obcaecati
+                libero,
+                voluptatem quae non? At atque porro maiores quo fugit nesciunt sapiente, iusto recusandae. Aut eaque
+                sunt velit amet, dolores perspiciatis commodi nobis repudiandae inventore corporis nisi!
+            </p>
+            <br><br>
+            <a href="../sass project/sassHomeP.html">Project Page &#x27A4;</a>
+        </div>
+        <div class="box">
+            <br><br>
+            <div class="logoIcon">
+                <div class="simbol"><img src="pic/img-CSS.png" alt="logo css"></div>
+                <div class="simbol"><img src="pic/img-HTML.png" alt="logo html"></div>
+            </div>
+            <img src="pic/page4.png" alt="place hold">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quaerat voluptas? Tempora saepe ea
+                consequatur praesentium aspernatur, accusantium, quaerat explicabo repellendus aliquid obcaecati
+                libero,
+                voluptatem quae non? At atque porro maiores quo fugit nesciunt sapiente, iusto recusandae. Aut eaque
+                sunt velit amet, dolores perspiciatis commodi nobis repudiandae inventore corporis nisi!
+            </p>
+            <br><br>
+            <a href="../htmlCssHomePage/project14.html">Project Page &#x27A4;</a>
+        </div>
+    </div>
+
+    <div id="case">
+        <div class="box">
+            <br><br>
+            <div class="logoIcon">
+                <div class="simbol"><img src="pic/img-CSS.png" alt="logo css"></div>
+                <div class="simbol"><img src="pic/img-HTML.png" alt="logo html"></div>
+            </div>
+            <img src="pic/page5.png" alt="place hold">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quaerat voluptas? Tempora saepe ea
+                consequatur praesentium aspernatur, accusantium, quaerat explicabo repellendus aliquid obcaecati
+                libero,
+                voluptatem quae non? At atque porro maiores quo fugit nesciunt sapiente, iusto recusandae. Aut eaque
+                sunt velit amet, dolores perspiciatis commodi nobis repudiandae inventore corporis nisi!
+            </p>
+            <br><br>
+            <a href="../htmlCssHomePage/project15.html">Project Page &#x27A4;</a>
+        </div>
+        <div class="box">
+            <br><br>
+            <div class="logoIcon">
+                <div class="simbol"><img src="pic/img-CSS.png" alt="logo css"></div>
+                <div class="simbol"><img src="pic/img-HTML.png" alt="logo html"></div>
+                <div class="simbol"><img src="pic/img-Bootstrap.png" alt="logo html"></div>
+            </div>
+            <img src="pic/bootstrapProject.png" alt="place hold">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quaerat voluptas? Tempora saepe ea
+                consequatur praesentium aspernatur, accusantium, quaerat explicabo repellendus aliquid obcaecati
+                libero,
+                voluptatem quae non? At atque porro maiores quo fugit nesciunt sapiente, iusto recusandae. Aut eaque
+                sunt velit amet, dolores perspiciatis commodi nobis repudiandae inventore corporis nisi!
+            </p>
+            <br><br>
+            <a href="../bootStrapProject/bootstrapProject22.html">Project Page &#x27A4;</a>
+        </div>
+        <div class="box">
+            <br><br>
+            <div class="logoIcon">
+                <div class="simbol"><img src="pic/img-CSS.png" alt="logo css"></div>
+                <div class="simbol"><img src="pic/img-HTML.png" alt="logo html"></div>
+            </div>
+            <img src="pic/page7.png" alt="place hold">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quaerat voluptas? Tempora saepe ea
+                consequatur praesentium aspernatur, accusantium, quaerat explicabo repellendus aliquid obcaecati
+                libero,
+                voluptatem quae non? At atque porro maiores quo fugit nesciunt sapiente, iusto recusandae. Aut eaque
+                sunt velit amet, dolores perspiciatis commodi nobis repudiandae inventore corporis nisi!
+            </p>
+            <br><br>
+            <a href="../htmlCssHomePage/project17.html">Project Page &#x27A4;</a>
+        </div>
+        <div class="box">
+            <br><br>
+            <div class="logoIcon">
+                <div class="simbol"><img src="pic/img-CSS.png" alt="logo css"></div>
+                <div class="simbol"><img src="pic/img-HTML.png" alt="logo html"></div>
+            </div>
+            <img src="pic/page8.png" alt="place hold">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quaerat voluptas? Tempora saepe ea
+                consequatur praesentium aspernatur, accusantium, quaerat explicabo repellendus aliquid obcaecati
+                libero,
+                voluptatem quae non? At atque porro maiores quo fugit nesciunt sapiente, iusto recusandae. Aut eaque
+                sunt velit amet, dolores perspiciatis commodi nobis repudiandae inventore corporis nisi!
+            </p>
+            <br><br>
+            <a href="../htmlCssHomePage/project18.html">Project Page &#x27A4;</a>
+        </div>
+    </div>
+
+    <div class="playCenter">
+        <hr class="hr">
+        <h1>Java Script Projects</h1>
+        <h2>Play Center</h2>
+    </div>
+    <div class="item1">
+        <div class="icon"><img src="pic/img-CSS.png" alt="logo css"></div>
+        <div class="icon"><img src="pic/img-HTML.png" alt="logo html"></div>
+        <div class="icon"><img src="../projectJS/builder/img/apiLogo.png" alt="logo word press"></div>
+        <div class="icon"><img src="../projectJS/builder/img/axios.png" alt="logo word press"></div>
+        <div class="icon"><img src="../projectJS/builder/img/es6logo.png" alt="logo word press"></div>
+        <div class="icon"><img src="../projectJS/builder/img/jsonLogo.png" alt="logo word press"></div>
+        <div class="icon"><img src="../projectJS/builder/img/javalogo.png" alt="logo word press"></div>
+        <div class="icon"><img src="../projectJS/builder/img/localSLogo.png" alt="logo word press"></div>
+        <div class="icon"><img src="../projectJS/builder/img/oopLogo.png" alt="logo word press"></div>
+        <div class="icon"><img src="pic/img-Bootstrap.png" alt="logo bootstrap"></div>
+        <div class="icon"><img src="pic/img-SASS@2x.png" alt="logo sass"></div>
+    </div>
+    <div id="jsProjects">
+        <div class="box">
+            <img src="../projectJS/builder/img/homePageBuilder.png" alt="place hold">
+            <p>The build screen project in JavaScript involves creating a dynamic web interface that displays real-time
+                data or
+                interactive elements. Using HTML for structure, CSS for styling, and JavaScript for functionality, it
+                updates the screen
+                based on user inputs or data changes. This project enhances skills in UI design and interactive
+                programming.
+            </p>
+            <br><br>
+            <a href="../projectJS/builder/homePageBuilderAgrees.html">Project Page &#x27A4;</a>
+        </div>
+        <div class="box">
+            <img src="../projectJS/calculator/img/homePageCalculator.png" alt="place hold">
+            <p>The calculator project in JavaScript creates an interactive web application for performing basic
+                arithmetic operations.
+                It uses HTML for the layout, CSS for styling, and JavaScript for processing calculations and updating
+                results. This
+                project helps developers practice handling user inputs, managing events, and manipulating the DOM.</p>
+            <br><br>
+            <a href="../projectJS/calculator/homePageCalculator.html">Project Page &#x27A4;</a>
+        </div>
+        <div class="box">
+            <img src="../projectJS/ticTac2/img/homePageTicTac.png" alt="place hold">
+            <p>The Tic Tac Toe project in JavaScript creates an interactive web-based version of the classic game. It
+                uses HTML for the
+                grid layout, CSS for styling, and JavaScript to handle game logic, including player turns, move
+                validation, and win
+                detection. This project enhances skills in DOM manipulation, event handling, and game state management.
+            </p>
+            <br><br>
+            <a href="../projectJS/ticTac2/homePageTicTac.htm">Project Page &#x27A4;</a>
+        </div>
+        <div class="box">
+            <img src="../projectJS/countries//pic/countriesLogo.png" alt="place hold">
+            <p>The countries project in JavaScript displays information about various countries using data from an API
+                or local
+                sources. It typically involves fetching country details, such as names, capitals, and populations, and
+                dynamically
+                presenting them on a webpage. This project helps developers practice API integration and data
+                manipulation in
+                JavaScript.
+            </p>
+            <br><br>
+            <a href="../projectJS/countries/countriesHomePage.html">Project Page &#x27A4;</a>
+        </div>
+    </div>
+
+    <div id="jsProjects">
+        <div class="box">
+            <br><br>
+            <img src="../projectJS/snake/img/snakeProject.png" alt="place hold">
+            <p>The Snake project in JavaScript creates a web-based version of the classic Snake game. Using HTML for the
+                game canvas,
+                CSS for styling, and JavaScript for game mechanics, players control the snake to eat food and grow while
+                avoiding
+                collisions with walls and itself. This project enhances skills in game loop management, collision
+                detection, and
+                real-time interaction.
+            </p>
+            <br><br>
+            <a href="../projectJS/snake/homePageSnake.html">Project Page &#x27A4;</a>
+        </div>
+        <div class="box">
+            <br><br>
+            <img src="../projectJS/change/img/changeHomePage.png" alt="place hold">
+            <p>The exchange project in JavaScript provides real-time conversion between different currencies
+                using data from
+                an exchange rate API. It involves fetching current exchange rates, performing conversions based on user
+                input, and
+                displaying results. This project helps developers practice API integration, dynamic updates, and
+                currency calculations
+                in JavaScript.
+            </p>
+            <br><br>
+            <a href="../projectJS/change/currencyHomePage.html">Project Page &#x27A4;</a>
+        </div>
+        <div class="box">
+            <br><br>
+            <img src="../projectJS/studentList/img/homePageStudents.png" alt="place hold">
+            <p>The student list project in JavaScript manages and displays a dynamic roster of students. Using HTML for
+                structure, CSS
+                for styling, and JavaScript for functionality, users can add, remove, and view student details. This
+                project enhances
+                skills in data manipulation, user input handling, and real-time updates, offering practical experience
+                in interactive
+                web applications.
+            </p>
+            <br><br>
+            <a href="../projectJS/studentList/studentsHomePage.html">Project Page &#x27A4;</a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="doc">
+        <div class="contactL">
+            <h2 class="h2">Contact Us</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptatibus ratione ut delectus nobis debitis,
+                a impedit nihil sapiente aliquam illum!
+            </p>
+            <form>
+                <div class="form">
+                    <aside class="name">Full Name:</aside>
+                    <input class="inputName" type="text" name="firstname" />
+                    <aside class="email">Email:</aside>
+                    <input class="inputEmail" type="text" name="lastname" />
+                    <aside class="phone">Phone:</aside>
+                    <input class="inputPhone" type="text" name="lastname" />
+                    <aside class="content">Content:</aside>
+                    <input class="inputContent" type="text" name="lastname" />
+                    <input class="btnSend" type="button" type="email" value="send">
+                </div>
+            </form>
+        </div>
+
+        <div class="contactR">
+            <img src="pic/doc.png" alt="logo doc">
+        </div>
+        <br><br>
+    </div>
+
+    <footer>
+        <!--<i style="font-size:45px; padding: 10px 10px 10px 10px;" class="fa">&#xf232;</i>-->
+        <a href="https://www.facebook.com/share/ATuVfoh1z9MZKYU4/?mibextid=LQQJ4d" class="fa fa-facebook"></a>
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fitzik_dishek%3Figsh%3DZWxjZGhwcDg1ZHJ6%26utm_source%3Dqr%26fbclid%3DIwZXh0bgNhZW0CMTAAAR3efOOAEm9f6tgRyEGIDWVMhLaXtHRrysTwJ-VbsRKHZEFfx2-_8PPiG10_aem_4fXblrn5h1xsaVLTmRCPzA&h=AT3t4DG7vBFydvyGuCet_DGFRBHg6fLd8h1C1leN-5qs_pTeKsJ828YWMBZ6EjMm1kV4bFKhzE6HDEu7gok4ETme_eZPxG9VTrTmza-JBf0IPsykiiyAezk_EgXe8N-zsVw5lFztoXTOH2FOI4dMSw"
+            class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="https://wa.me/972543014011" class="fa fa-whatsapp"></a>
+        <a href="itzikdishek0@gmail.com" class="fa fa-gmail">
+            <i class="material-icons"
+                style="font-size:52px;color:red;background-color: rgb(255, 255, 255,.5); ">mail</i>
+        </a>
+        <p>Itzik Dishek - All Rights Reserved &#169;</p>
+    </footer>
+</body>
+
+</html>

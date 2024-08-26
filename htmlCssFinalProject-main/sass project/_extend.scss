@@ -1,0 +1,156 @@
+img {
+    width: 1536px;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+h1 {
+    font-size: $headsize;
+    color: $usefulColor;
+    font-family: $fontF;
+    z-index: 3;
+    position: absolute;
+
+    top: 192px;
+    left: 316px;
+    width: 868px;
+    height: 113px;
+    /* UI Properties */
+    text-align: right;
+    letter-spacing: 0px;
+
+}
+
+p {
+    position: absolute;
+    top: 330px;
+    right: 490px;
+    z-index: 2;
+    color: #F9F9F9;
+}
+
+.name {
+    position: absolute;
+    top: 626px;
+    left: 1258px;
+    width: 52px;
+    height: 21px;
+    text-align: right;
+    color: #011560;
+    z-index: 2;
+    font: normal normal bold 16px/21px Assistant;
+}
+
+.n {
+    position: absolute;
+    top: 650px;
+    left: 892px;
+    width: 418px;
+    height: 50px;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    z-index: 2;
+}
+
+.mail {
+    position: absolute;
+    top: 626px;
+    left: 817px;
+    width: 38px;
+    height: 21px;
+    /* UI Properties */
+    text-align: right;
+    font: normal normal bold 16px/21px Assistant;
+
+    color: #011560;
+    z-index: 2;
+}
+
+.m {
+    position: absolute;
+    top: 649px;
+    left: 437px;
+    width: 418px;
+    height: 50px;
+    /* UI Properties */
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    z-index: 2;
+}
+
+.btn {
+    position: absolute;
+    z-index: 2;
+    top: 648px;
+    left: 210px;
+    width: 166px;
+    height: 50px;
+    /* UI Properties */
+    background: #D3E10E 0% 0% no-repeat padding-box;
+
+}
+
+
+@media (max-width: 768px) {
+    div img {
+        width: 490px;
+        height: 250px;
+    }
+
+    div h1 {
+        position: absolute;
+        font-size: 32px;
+        left: 70px;
+        top: 50px;
+    }
+
+    div p {
+        position: absolute;
+        font-size: 14px;
+        left: 45px;
+        top: 105px;
+        width: 390px;
+        text-align: center;
+    }
+
+    .name {
+        position: absolute;
+        top: 308px;
+        left: 102px;
+        width: 286px;
+        height: 34px;
+    }
+
+    .email {
+        position: absolute;
+        top: 375px;
+        left: 102px;
+        width: 286px;
+        height: 34px;
+    }
+
+    .nameF {
+        position: absolute;
+        top: 285px;
+        left: 105px;
+        width: 37px;
+        height: 14px;
+    }
+
+    .emailF {
+        position: absolute;
+        top: 350px;
+        left: 105px;
+        width: 26px;
+        height: 14px;
+    }
+
+    a {
+        position: absolute;
+        top: 422px;
+        left: 102px;
+        width: 286px;
+        height: 34px;
+        padding: 5px 25px 5px 115px;
+    }
+}

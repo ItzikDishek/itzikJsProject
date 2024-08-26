@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    /* overflow-y: hidden; */
+}
+
+nav {
+    width: 40vw;
+    height: 2vh;
+    background-color: white;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav ul li {
+    width: 30vw;
+    height: 4vh;
+}
+
+nav ul a {
+    display: block;
+    text-decoration: none;
+    width: 7vw;
+    text-align: center;
+    color: black;
+    line-height: 2;
+}
+
+nav ul a:hover {
+    background-color: aqua;
+    color: darkblue;
+}
+
+section ul li {
+    position: absolute;
+    top: 2vh;
+    left: 1vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+section {
+    top: 0;
+    width: 40vw;
+    height: 2vh;
+    font-size: 10px;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+section ul li img {
+    width: 50px;
+    height: 50px;
+}
+
+section ul li p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.item {
+    background-color: white;
+    /* margin: 65px; */
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, .0);
+
+}
+
+.icon {
+    padding: 30px;
+}
+
+.icon img {
+    width: 5vw;
+    height: 10vh;
+}
+
+.boxL {
+    width: 30vw;
+    height: 47vh;
+    position: absolute;
+    left: 12vw;
+    top: 35vh;
+}
+
+.boxL img {
+    width: 28vw;
+    height: 45vh;
+    left: 12vw;
+    top: 35vh;
+    border-radius: 15px;
+}
+
+.boxR {
+    right: 12vw;
+    top: 40vh;
+    width: 30vw;
+    height: 47vh;
+    position: absolute;
+
+}
+
+/* .boxR h2 {} */
+
+.boxR P {
+    position: absolute;
+    top: 8vh;
+}
+
+.boxR .btn1 {
+    position: absolute;
+    top: 15vh;
+}
+
+/* .boxR .btn2 {} */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 2vw;
+    z-index: 3;
+}

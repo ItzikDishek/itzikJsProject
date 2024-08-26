@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Layout Example</title>
+    <link rel="stylesheet" href="builderAgrees.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left-side" id="emptySpace"></div>
+        <div class="right-side">
+            <form id="myForm">
+                <label for="inputField">Back Ground Color:</label>
+                <input type="color" id="colorInput" name="Back Ground-Color">
+                <br>
+                <label for="inputField">Border:</label>
+                <div class="box" id="box"></div>
+                <select id="borderStyleSelect">
+                    <option value="solid">Solid</option>
+                    <option value="dashed">Dashed</option>
+                    <option value="dotted">Dotted</option>
+                    <option value="double">Double</option>
+                    <option value="groove">Groove</option>
+                    <option value="ridge">Ridge</option>
+                    <option value="inset">Inset</option>
+                    <option value="outset">Outset</option>
+                </select>
+                <br>
+                <label for="inputField">radius:</label>
+                <input type="text" id="radiusInput" name="radius">
+                <br>
+                <label for="inputField">shadow:</label>
+                <input type="text" id="shadowInput" name="shadow">
+                <br>
+                <label for="inputField">height:</label>
+                <input type="text" id="heightInput" name="height">
+                <br>
+                <label for="inputField">width:</label>
+                <input type="text" id="widthInput" name="height">
+                <br>
+                <label for="inputField">text:</label>
+                <input type="text" id="textInput" name="text">
+                <br>
+                <label for="inputField">fontSize:</label>
+                <input type="text" id="fontSizeInput" name="fontSize">
+                <br>
+                <label for="inputField">color:</label>
+                <input type="color" id="colorTextInput" name="color">
+                <br><br>
+                <button type="button" id="resetBtn" onclick="reasetForm()">Reset</button>
+                <button type="button" id="addBtn">Add</button>
+            </form>
+        </div>
+    </div>
+    <script src="builderAgrees.js"></script>
+</body>
+
+</html>

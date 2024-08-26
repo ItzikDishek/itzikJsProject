@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        img {
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            left: 0;
+        }
+
+        h1 {
+            color: white;
+            font-size: 48px;
+            z-index: 2;
+            position: absolute;
+            right: 10vw;
+            top: 16vh;
+        }
+
+        h2 {
+            color: white;
+            font-size: 34px;
+            z-index: 2;
+            position: absolute;
+            right: 37vh;
+            top: 35vh;
+        }
+
+        h4 {
+            color: white;
+            font-size: 34px;
+            z-index: 2;
+            position: absolute;
+            right: 6vw;
+            top: 90vh;
+        }
+
+        .box p {
+            color: white;
+            font-size: 12px;
+            width: 16vw;
+            text-align: justify;
+            z-index: 2;
+            position: absolute;
+            right: 16vw;
+            top: 43vh;
+        }
+
+        .form_wrapper {
+            width: 19vw;
+            height: 54vh;
+            background-color: rgba(245, 245, 245, .5);
+            position: absolute;
+            top: 33vh;
+            right: 15vw;
+            z-index: 2;
+        }
+
+        .name {
+            position: absolute;
+            top: 20vh;
+            right: 15vw;
+            width: 5vw;
+            height: 5vh;
+            text-align: right;
+            font: normal normal bold 16px/24px Heebo;
+            letter-spacing: 0px;
+            color: white;
+            opacity: 1;
+        }
+
+        .inputName {
+            position: absolute;
+            top: 23.5vh;
+            right: 1.7vw;
+            width: 16vw;
+            height: 6vh;
+            background: rgba(128, 128, 128, .8) 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .phone {
+            position: absolute;
+            top: 30.5vh;
+            right: 14.7vw;
+            width: 5vw;
+            height: 5vh;
+            text-align: right;
+            font: normal normal bold 16px/24px Heebo;
+            letter-spacing: 0px;
+            color: white;
+            opacity: 1;
+        }
+
+        .inputPhone {
+            position: absolute;
+            top: 34vh;
+            right: 1.7vw;
+            width: 16vw;
+            height: 6vh;
+            background: rgba(128, 128, 128, .8) 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .btn {
+            text-decoration: none;
+            position: absolute;
+            top: 75vh;
+            right: 19.3vw;
+            width: 11vw;
+            height: 5vh;
+            text-align: center;
+            font: normal normal bold 24px/33px Heebo;
+            letter-spacing: 0.36px;
+            color: white;
+            opacity: 1;
+            background-color: rgb(0, 0, 0);
+            padding: 0 10px 0 10px;
+            z-index: 2;
+        }
+
+        @media (max-width: 768px) {
+            .form_wrapper {
+                position: absolute;
+                top: 60px;
+                left: 10vw;
+                width: 70vh;
+                height: 80vw;
+            }
+
+            .container h1 {
+                font-size: 36px;
+                width: 95vw;
+                left: 2vw;
+                top: 2vh;
+            }
+
+            .container h2 {
+                font-size: 36px;
+                width: 90vw;
+                left: 27vw;
+                top: 15vh;
+            }
+
+            .container h4 {
+                font-size: 32px;
+                width: 80vw;
+                left: 11vw;
+                top: 87vh;
+            }
+
+            .box p {
+                font-size: 16px;
+                width: 55vw;
+                left: 21vw;
+                top: 25vh;
+                text-align: center;
+                color: black;
+                z-index: 3;
+            }
+
+            .name {
+                position: absolute;
+                top: 30vh;
+                left: 10vw;
+                width: 5vw;
+                height: 5vh;
+                text-align: right;
+                font: normal normal bold 16px/24px Heebo;
+                letter-spacing: 0px;
+                color: rgb(0, 0, 0);
+                opacity: 1;
+            }
+
+            .inputName {
+                position: absolute;
+                top: 35vh;
+                left: 10vw;
+                width: 55vw;
+                height: 6vh;
+                background: rgba(128, 128, 128, .8) 0% 0% no-repeat padding-box;
+                opacity: 1;
+            }
+
+            .phone {
+                position: absolute;
+                top: 43vh;
+                left: 10vw;
+                width: 5vw;
+                height: 5vh;
+                text-align: right;
+                font: normal normal bold 16px/24px Heebo;
+                letter-spacing: 0px;
+                color: rgb(0, 0, 0);
+                opacity: 1;
+            }
+
+            .inputPhone {
+                position: absolute;
+                top: 48vh;
+                left: 10vw;
+                width: 55vw;
+                height: 6vh;
+                background: rgba(128, 128, 128, .8) 0% 0% no-repeat padding-box;
+                opacity: 1;
+            }
+
+            .btn {
+                text-decoration: none;
+                position: absolute;
+                top: 72vh;
+                right: 21.3vw;
+                width: 22vw;
+                height: 6vh;
+                text-align: center;
+                font: normal normal bold 24px/33px Heebo;
+                letter-spacing: 0.36px;
+                color: white;
+                opacity: 1;
+                background-color: rgb(0, 0, 0);
+                padding: 0 10px 0 10px;
+                z-index: 2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="pic/cocktail.jpg" alt="">
+        <h1>Let us invite you for a drink...</h1>
+        <h2>Happy Hour!</h2>
+        <h4>Our journey begins here...!</h4>
+
+    </div>
+    <div class="box">
+        <p>every day from 17:00 to 21:00! 1+1 on all the chasers! And a 10 percent discount on the entire
+            food menu!</p>
+    </div>
+    <form action="https://www.mgweb.co.il">
+        <div class="form_wrapper">
+            <aside class="name">name:</aside>
+            <input class="inputName" type="text" name="firstname" />
+            <aside class="phone">phone:</aside>
+            <input class="inputPhone" type="text" name="lastname" />s
+        </div>
+        <a href="#" class="btn">Send</a>
+</body>
+
+</html>

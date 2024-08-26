@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+    background: linear-gradient(0.25turn,
+            #65c5ed,
+            #ebf8e1,
+            #ec743c);
+}
+
+#id_h1 {
+    font-family: Dancing Script;
+    font-size: 46px;
+
+}
+
+#screen {}
+
+
+@media screen and (max-width: 600px) {
+    #screen {
+        width: 95%;
+        height: 80vh;
+    }
+
+}

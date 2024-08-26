@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 240vh;
+            width: 100vw;
+        }
+
+        body {
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            background: #E5EEFF 0% 0% no-repeat padding-box;
+            opacity: 1;
+            overflow-x: hidden;
+        }
+
+        .item1 img {
+            position: absolute;
+            top: 27vh;
+            left: 9vw;
+            width: 19vw;
+            height: 30vh;
+            background: transparent url('img/Rectangle 515.png') 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .item2 img {
+            position: absolute;
+            top: 27vh;
+            left: 29vw;
+            width: 19vw;
+            height: 30vh;
+            background: transparent url('img/Rectangle 514.png') 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .item3 img {
+            position: absolute;
+            top: 60vh;
+            left: 9vw;
+            width: 19vw;
+            height: 30vh;
+            background: transparent url('img/Rectangle 516.png') 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .item4 img {
+            position: absolute;
+            top: 60vh;
+            left: 29vw;
+            width: 19vw;
+            height: 30vh;
+            background: transparent url('img/Rectangle 506.png') 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .item5 img {
+            position: absolute;
+            top: 93vh;
+            left: 9vw;
+            width: 19vw;
+            height: 30vh;
+            background: transparent url('img/Rectangle 506.png') 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .item6 img {
+            position: absolute;
+            top: 93vh;
+            left: 29vw;
+            width: 19vw;
+            height: 30vh;
+            background: transparent url('img/Rectangle 506.png') 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .item7 img {
+            position: absolute;
+            top: 93vh;
+            right: 30.5vw;
+            width: 19vw;
+            height: 30vh;
+            background: transparent url('img/Rectangle 506.png') 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .item8 img {
+            position: absolute;
+            top: 93vh;
+            right: 10vw;
+            width: 19vw;
+            height: 30vh;
+            background: transparent url('img/Rectangle 506.png') 0% 0% no-repeat padding-box;
+            border: 1px solid #707070;
+            opacity: 1;
+        }
+
+        .item9 img {
+            position: absolute;
+            top: 125vh;
+            right: 30.5vw;
+            width: 19vw;
+            height: 30vh;
+
+            background: transparent url('img/Rectangle 506.png') 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .item10 img {
+            position: absolute;
+            top: 125vh;
+            right: 10vw;
+            width: 19vw;
+            height: 30vh;
+            background: transparent url('img/Rectangle 506.png') 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .item11 img {
+            position: absolute;
+            top: 158vh;
+            right: 30.5vw;
+            width: 19vw;
+            height: 30vh;
+            background: transparent url('img/Rectangle 506.png') 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .item12 img {
+            position: absolute;
+            top: 158vh;
+            right: 10vw;
+            width: 19vw;
+            height: 30vh;
+            background: transparent url('img/Rectangle 506.png') 0% 0% no-repeat padding-box;
+            border: 1px solid #707070;
+            opacity: 1;
+        }
+
+        .item13 img {
+            position: absolute;
+            top: 191vh;
+            right: 30.5vw;
+            width: 19vw;
+            height: 30vh;
+            background: transparent url('img/Rectangle 513.png') 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .item14 img {
+            position: absolute;
+            top: 191vh;
+            right: 10vw;
+            width: 19vw;
+            height: 30vh;
+            background: transparent url('img/Rectangle 506.png') 0% 0% no-repeat padding-box;
+            border: 1px solid #707070;
+            opacity: 1;
+        }
+
+        .item15 {
+            position: absolute;
+            top: 27vh;
+            right: 10vw;
+            width: 39.5vw;
+            height: 63.2vh;
+            background: #020253 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .item16 {
+            position: absolute;
+            top: 125vh;
+            left: 9vw;
+            width: 39vw;
+            height: 96.2vh;
+            background: #8E097C 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .item15 h1 {
+            position: absolute;
+            top: 12vh;
+            right: 0vw;
+            width: 40vw;
+            height: 10vh;
+            text-align: center;
+            font: normal normal bold Assistant;
+            letter-spacing: 0px;
+            color: #0EE1DA;
+            opacity: 1;
+            font-size: 40px;
+        }
+
+        .item15 p {
+            position: absolute;
+            top: 30vh;
+            right: 10vw;
+            width: 20vw;
+            height: 9vh;
+
+            text-align: center;
+            font: normal normal normal 20px/26px Assistant;
+            letter-spacing: 0px;
+            color: #F9F9F9;
+            opacity: 1;
+        }
+
+        .item16 h1 {
+            position: absolute;
+            top: 8vh;
+            left: 12.5vw;
+            width: 14vw;
+            height: 8vh;
+            text-align: center;
+            font: normal normal bold 35px/46px Assistant;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+
+        .item16 p {
+            position: absolute;
+            top: 30vh;
+            left: 9.5vw;
+            width: 20vw;
+            height: 10vh;
+            text-align: center;
+            font: normal normal normal 20px/26px Assistant;
+            letter-spacing: 0px;
+            color: #F9F9F9;
+            opacity: 1;
+        }
+
+        .name {
+            position: absolute;
+            top: 30vh;
+            left: 3vw;
+            width: 2vw;
+            height: 4vh;
+            text-align: right;
+            font: normal normal bold 16px/24px Heebo;
+            letter-spacing: 0px;
+            color: #0EE1DA;
+            opacity: 1;
+        }
+
+        .inputName {
+            position: absolute;
+            top: 32.5vh;
+            left: 3vw;
+            width: 21.5vw;
+            height: 5.5vh;
+            background: #E5EEFF 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .email {
+            position: absolute;
+            top: 38.5vh;
+            left: 3vw;
+            width: 2vw;
+            height: 4vh;
+            text-align: right;
+            font: normal normal bold 16px/24px Heebo;
+            letter-spacing: 0px;
+            color: #0EE1DA;
+            opacity: 1;
+        }
+
+        .inputEmail {
+            position: absolute;
+            top: 41vh;
+            left: 3vw;
+            width: 21.5vw;
+            height: 5.5vh;
+            background: #E5EEFF 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .experience {
+            position: absolute;
+            top: 47.2vh;
+            left: 3vw;
+            width: 9vw;
+            height: 3vh;
+            text-align: left;
+            font: normal normal bold 16px/24px Heebo;
+            letter-spacing: 0px;
+            color: #0EE1DA;
+            opacity: 1;
+        }
+
+        .inputExperience {
+            position: absolute;
+            top: 50vh;
+            left: 3vw;
+            width: 21.5vw;
+            height: 15vh;
+            background: #E5EEFF 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .btn {
+            text-decoration: none;
+            position: absolute;
+            top: 87vh;
+            left: 9vw;
+            width: 21.5vw;
+            height: 5.5vh;
+            text-align: center;
+            font: normal normal bold 24px/33px Heebo;
+            letter-spacing: 0.36px;
+            color: #011560;
+            opacity: 1;
+            background-color: #0EE1DA;
+            padding: 15px;
+        }
+
+        .form_wrapper {
+            top: 20vh;
+            left: 6vw;
+            position: absolute;
+        }
+
+        @media (max-width: 768px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                top: 0px;
+                left: 0px;
+                width: 100vw;
+                height: 100vh;
+                background: #E5EEFF 0% 0% no-repeat padding-box;
+                opacity: 1;
+                overflow-x: hidden;
+            }
+
+            .container {
+                width: 100vw;
+                height: 528vh;
+            }
+
+            .item15 {
+                position: absolute;
+                top: 0;
+                left: 0px;
+                width: 100vw;
+                height: 65vh;
+            }
+
+            .item15 h1 {
+                position: absolute;
+                font-size: 36px;
+                top: 8vh;
+                left: 28vw;
+                width: 41vw;
+                height: 8vh;
+            }
+
+            .item15 p {
+                position: absolute;
+                font-size: 20px;
+                top: 26vh;
+                left: 24vw;
+                width: 50vw;
+                height: 10vh;
+            }
+
+            .container .item1 img {
+                position: absolute;
+                top: 70vh;
+                left: 6.5vw;
+                width: 42vw;
+                height: 45vh;
+            }
+
+            .container .item2 img {
+                position: absolute;
+                top: 70vh;
+                left: 53.5vw;
+                width: 42vw;
+                height: 45vh;
+            }
+
+            .container .item3 img {
+                position: absolute;
+                top: 120vh;
+                left: 6.5vw;
+                width: 42vw;
+                height: 45vh;
+            }
+
+            .container .item4 img {
+                position: absolute;
+                top: 120vh;
+                left: 53.5vw;
+                width: 42vw;
+                height: 45vh;
+            }
+
+            .container .item5 img {
+                position: absolute;
+                top: 170vh;
+                left: 6.5vw;
+                width: 42vw;
+                height: 45vh;
+            }
+
+            .container .item6 img {
+                position: absolute;
+                top: 170vh;
+                left: 53.5vw;
+                width: 42vw;
+                height: 45vh;
+            }
+
+            .container .item7 img {
+                position: absolute;
+                top: 219vh;
+                left: 6.5vw;
+                width: 42vw;
+                height: 45vh;
+                z-index: 1;
+            }
+
+            .container .item8 img {
+                position: absolute;
+                top: 219vh;
+                left: 53.5vw;
+                width: 42vw;
+                height: 45vh;
+                z-index: 1;
+            }
+
+            .item16 {
+                top: 267vh;
+                left: 6.2vw;
+                width: 90vw;
+                height: 518px;
+            }
+
+            .item16 h1 {
+                font-size: 35px;
+                position: absolute;
+                top: 5vh;
+                left: 15vw;
+                width: 60vw;
+                height: 10vh;
+            }
+
+            .item16 p {
+                font-size: 16px;
+                position: absolute;
+                top: 27vh;
+                left: 15.5vw;
+                width: 60vw;
+                height: 10vh;
+            }
+
+            form .name {
+                font-size: 12px;
+                position: absolute;
+                top: 28vh;
+                left: 17vw;
+                width: 7vw;
+                height: 3vh;
+            }
+
+            .inputName {
+                position: absolute;
+                top: 33.5vh;
+                left: 17vw;
+                width: 47vw;
+                height: 6vh;
+            }
+
+            .email {
+                font-size: 12px;
+                position: absolute;
+                top: 40vh;
+                left: 17vw;
+                width: 7vw;
+                height: 6vh;
+            }
+
+            .inputEmail {
+                position: absolute;
+                top: 45vh;
+                left: 17vw;
+                width: 47vw;
+                height: 6vh;
+            }
+
+            .experience {
+                font-size: 12px;
+                position: absolute;
+                top: 52vh;
+                left: 17vw;
+                width: 18vw;
+                height: 10px;
+            }
+
+            .inputExperience {
+                position: absolute;
+                top: 57.5vh;
+                left: 17vw;
+                width: 47vw;
+                height: 18.5vh;
+            }
+
+            .btn {
+                position: absolute;
+                top: 98vh;
+                left: 23vw;
+                width: 47vw;
+                height: 6vh;
+                padding: 0 5px 0 5px;
+            }
+
+            .container .item9 img {
+                position: absolute;
+                top: 380vh;
+                left: 6.5vw;
+                width: 42vw;
+                height: 45vh;
+            }
+
+            .container .item10 img {
+                top: 380vh;
+                position: absolute;
+                width: 42vw;
+                height: 45vh;
+                left: 53.5vw;
+            }
+
+            .container .item11 img {
+                top: 429vh;
+                position: absolute;
+                left: 6.5vw;
+                width: 42vw;
+                height: 45vh;
+            }
+
+            .container .item12 img {
+                top: 429vh;
+                position: absolute;
+                width: 42vw;
+                height: 45vh;
+                left: 53.5vw;
+            }
+
+            .container .item13 img {
+                position: absolute;
+                left: 6.5vw;
+                width: 42vw;
+                height: 45vh;
+                top: 478vh;
+            }
+
+            .container .item14 img {
+                position: absolute;
+                width: 42vw;
+                height: 45vh;
+                left: 53.5vw;
+                top: 478vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1"><img src="pic/pic1.png" alt="pic1"></div>
+        <div class="item2"><img src="pic/pic2.png" alt=""></div>
+        <div class="item3"><img src="pic/pic3.png" alt=""></div>
+        <div class="item4"><img src="pic/pic4.png" alt=""></div>
+        <div class="item5"><img src="pic/pic5.png" alt=""></div>
+        <div class="item6"><img src="pic/pic6.png" alt=""></div>
+        <div class="item7"><img src="pic/pic7.png" alt=""></div>
+        <div class="item8"><img src="pic/pic8.png" alt=""></div>
+        <div class="item9"><img src="pic/pic9.png" alt=""></div>
+        <div class="item10"><img src="pic/pic10.png" alt=""></div>
+        <div class="item11"><img src="pic/pic11.png" alt=""></div>
+        <div class="item12"><img src="pic/pic12.png" alt=""></div>
+        <div class="item13"><img src="pic/pic13.png" alt=""></div>
+        <div class="item14"><img src="pic/pic14.png" alt=""></div>
+        <div class="item15">
+            <h1>discover the world</h1>
+            <p>Lorem Ipsum, or Lipsum for short, is a common and meaningless word that is used as a "placeholder" when
+                editing.</p>
+        </div>
+        <div class="item16">
+            <h1>Tell us about your experience</h1>
+            <p>Lorem Ipsum, or Lipsum for short, is a common and meaningless word that is used as a "placeholder" when
+                editing.</p>
+            <br>
+            <form action="https://www.mgweb.co.il">
+                <div class="form_wrapper">
+                    <aside class="name">name:</aside>
+                    <input class="inputName" type="text" name="firstname" />
+                    <aside class="email">Email:</aside>
+                    <input class="inputEmail" type="text" name="lastname" />
+                    <aside class="experience">Your experience:</aside>
+                    <input class="inputExperience" type="text" name="lastname" />
+                </div>
+                <a href="#" class="btn">Send</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
